@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Toggle</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+   <div class="background">
+<img id="ib"src="bluebulb.JPG" alt="no found" height="500px" width="300">
+<span>
+<button id="bbtn">blue</button>
+</span>
+<!-- span tag for margin -->
+<span>
+<img id="ibb"src="dd1.JPG" alt="no found" height="500px" width="400">
+</span>
+   </div>
+
+<script>
+
+let pic = document.getElementById('ib');
+let pic1 = document.getElementById('ibb');
+let btn = document.getElementById('bbtn');
+
+document.addEventListener('click',dinu)
+
+function dinu(e){
+    
+if (btn.textContent.includes('blue')){
+    pic.src="yellowbulb.jpg";
+    pic1.src="dd2.jpg";
+    btn.textContent="yellow";
+}
+else if (btn.textContent.includes('yellow')){
+    pic.src="greenbulb.jpg";
+    pic1.src="dd3.jpg";
+    btn.textContent="green";
+}
+else if (btn.textContent.includes('green')){
+    pic.src="bluebulb.jpg";
+    pic1.src="dd1.jpg";
+    btn.textContent="blue";
+}
+}
+</script>
+
+
+
+</body>
+</html>

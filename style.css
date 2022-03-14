@@ -1,0 +1,17 @@
+span{
+    margin: 100px;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    font-size: x-large;
+}
+
+img,button{
+    border: 3px solid red;
+}
+
+.background{
+    background-color: aqua;
+}
